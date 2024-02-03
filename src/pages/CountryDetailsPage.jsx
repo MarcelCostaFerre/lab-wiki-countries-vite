@@ -39,13 +39,14 @@ function CountryDetails() {
           <p>
             <b>Borders:</b>
           </p>
+          <ul>
           {country.borders.map((border) => {
             return (
-              <ul key={country._id}>
-                <li><Link to={`/${border}`}>{border}</Link></li>
-              </ul>
+               
+                <li key={country._id}><Link to={`/${border}`}>{border}</Link></li>
+              
             );
-          })}
+          })}</ul>
         </>
       )}
 
